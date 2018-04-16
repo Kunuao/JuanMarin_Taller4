@@ -48,3 +48,9 @@ def InverseFastFurierT(x):
                        X_even - factor * X_odd])
 
     return X.ravel()
+
+
+
+
+plt.plot(X,M)
+plt.savefig('imagen.png')
