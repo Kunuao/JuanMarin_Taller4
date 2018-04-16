@@ -3,7 +3,7 @@ import numpy as np
 
 
 #Definimos la función que efectua la transformada rápida de Fourier. Devuelve array con coeff complejos.
-def FFT(x):
+def FastFurierT(x):
     N = len(x)
     N_min = min(N, 32)
     
@@ -25,10 +25,10 @@ def FFT(x):
     return X.ravel()
 
 
-# In[3]:
+
 
 #Definimos la función que efectua la transformada inversa rápida de Fourier. Devuelve array con coeff complejos.
-def IFFT(x):
+def InverseFastFurierT(x):
     N = len(x)
     N_min = min(N, 32)
     
